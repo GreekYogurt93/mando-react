@@ -1,0 +1,196 @@
+
+
+.carousel
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel__info
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+  
+}
+
+.carousel__header {
+    flex: 1 1 0;
+    padding: 0 40px; 
+    font-size: xx-large;
+    font-family: "droid";
+  }
+  
+  .carousel__para {
+    flex: 2 1  0;   
+    padding: 0 40px;
+    line-height: 1.7;
+    font-family: "open-sans";
+  }
+
+  .carousel-wheel
+  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .carousel-image
+  {
+    width: 500px;
+    height: 300px;
+    display: inline-block  ;
+    margin: 0px 40px;
+  }
+
+  .carousel-image__spotlight
+  {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 400px;
+    width: 600px;
+  }
+
+  .carousel-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1  0;   
+  }
+
+  .carousel__nav-button
+  {
+    background-color: rgba(44, 92, 75, 0.851);
+    border: none;
+    padding: 10px;
+  }
+
+  .carousel__nav-button:hover
+  {
+    background-color: rgba(75, 152, 125, 0.851);
+    cursor: pointer;
+  }
+
+  .carousel-image__nav
+  {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.271);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+  }
+
+  .carousel-image__index
+  {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .carousel-image__index--selected
+  {
+    background-color: rgb(58, 189, 126);
+  }
+
+  .carousel__nav--small-mobile
+  {
+    display: none;
+  }
+
+  @media (min-width:321px) and (max-width:600px)
+  {
+    .carousel__info{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .carousel__para{
+        order: 3;
+        flex-basis: 100%;
+        width: 400px;
+        padding: 0px;
+    }
+
+    .carousel__nav{
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .carousel__header{
+        width: 50%;
+        padding: 0px;
+    }
+  }
+
+  @media (max-width:320px)
+  {
+
+    .carousel
+    {
+        align-items: center;
+        gap: 5px;
+    }
+
+    .carousel-image   
+    {
+        display: none;
+        margin: 0px;
+    }
+
+    .carousel__nav
+    {
+        display: none;
+    }
+
+    .carousel__header{
+        margin: 0px 0px;
+        padding: 0px;
+        color: rgb(10, 51, 101);
+    }
+
+    .carousel__para
+    {
+        padding: 0px 0px;
+        color: rgb(78, 77, 77);
+    }
+
+   
+
+    .carousel-image__spotlight{
+        display: block;
+        position: relative;
+    }
+
+    .carousel__info
+    {
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+
+    .carousel__nav--small-mobile
+    {
+        display: flex;
+        gap:30px;
+    }
+
+    
+  }

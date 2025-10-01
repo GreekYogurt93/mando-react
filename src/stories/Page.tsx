@@ -8,6 +8,10 @@ import { PageTitle } from './PageTitle/PageTitle';
 
 import image from '../../public/clouds2.jpg'
 import { RelatedContent } from './RelatedContent/RelatedContent';
+import { Carousel } from './Carousel/Carousel';
+import carousel1 from "../stories/assets/carousel1.jpg"
+import carousel2 from "../stories/assets/carousel2.jpg"
+import carousel3 from "../stories/assets/carousel3.jpg"
 
 
 
@@ -30,6 +34,25 @@ export const Page: React.FC = () => {
       />
       <PageTitle title={'Page Title'} description={'HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. '} image={image} imageAlt={'some clouds'}           
       />
+
+      <Carousel title={"Page title"}
+        desc={"HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. "}
+        slides={[{
+            image: carousel1,
+            altText: ""
+        },{
+            image: carousel2,
+            altText: ""
+        },{
+            image: carousel3,
+            altText: ""
+        },{
+            image: carousel3,
+            altText: ""
+        },{
+            image: carousel3,
+            altText: ""
+        }]} />
 
       <RelatedContent title={'HTML elements are the building blocks of HTML pages'} callToActionText={'CTA BUTTON'} callToActionLink={'/'} cards={[ {
         date:"01/12/2026",
