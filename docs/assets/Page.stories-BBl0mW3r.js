@@ -1,0 +1,17 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import"./iframe-CA5pW7it.js";import{H as u,l}from"./cips-logo-D3zSdNAq.js";import{B as d}from"./BreadCrumbs-BYZ5pGZn.js";import{P as g}from"./PageTitle-D3zZvjl7.js";import{R as h}from"./RelatedContent-BSY2RTB6.js";import{C as p,c as L,a as T,b as s}from"./carousel3-DIapQLvq.js";import"./preload-helper-PPVm8Dsz.js";import"./RelatedContentItem-Doirna0V.js";const t=""+new URL("clouds2-Cv58y48G.jpg",import.meta.url).href,r=()=>e.jsxs("div",{className:"wrapper",children:[e.jsx(u,{Link1:{LinkLabel:"About us",LinkUrl:"/aboutus"},Link2:{LinkLabel:"Contact",LinkUrl:"/contact"},SiteLogo:l,SiteLogoAlt:"CIP Logo",SiteLogoUrl:l,SiteLogoScreenReadText:"CIP Logo",MobileMenuLabel:"Menu"}),e.jsx(d,{pages:[{label:"About us",link:"/About-Us"},{label:"Meet the team",link:"/team"},{label:"Leadership",link:"/leadership"}],homePageLink:"/",homePageScreenReaderText:"Home Page",currentPageLabel:"Weekly forecast"}),e.jsx(g,{title:"Page Title",description:"HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. ",image:t,imageAlt:"some clouds"}),e.jsx(p,{title:"Page title",desc:"HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. ",slides:[{image:L,altText:""},{image:T,altText:""},{image:s,altText:""},{image:s,altText:""},{image:s,altText:""}]}),e.jsx(h,{title:"HTML elements are the building blocks of HTML pages",callToActionText:"CTA BUTTON",callToActionLink:"/",cards:[{date:"01/12/2026",title:"Lorem ipsum dolor sit amet consectet",description:"This is what this should look like when the card is hovered. We would remove the ellipsis and show the tags.",image:t,imageAlt:"A calm sky",tags:["forecast","rain","meteo"]},{date:"01/12/2026",title:"Lorem ipsum dolor sit amet consectet",description:"This is what this should look like when the card is hovered. We would remove the ellipsis and show the tags.",image:t,imageAlt:"A calm sky",tags:["forecast","rain","meteo"]},{date:"01/12/2026",title:"Lorem ipsum dolor sit amet consectet",description:"This is what this should look like when the card is hovered. We would remove the ellipsis and show the tags.",image:t,imageAlt:"A calm sky",tags:["forecast","rain","meteo"]}]})]});r.__docgenInfo={description:"",methods:[],displayName:"Page"};const{expect:n,userEvent:b,within:k}=__STORYBOOK_MODULE_TEST__,j={title:"Example/Page",component:r,parameters:{layout:"fullscreen"}},o={play:async({canvasElement:c})=>{const i=k(c),a=i.getByRole("button",{name:/Log in/i});await n(a).toBeInTheDocument(),await b.click(a),await n(a).not.toBeInTheDocument();const m=i.getByRole("button",{name:/Log out/i});await n(m).toBeInTheDocument()}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+  play: async ({
+    canvasElement
+  }) => {
+    const canvas = within(canvasElement);
+    const loginButton = canvas.getByRole('button', {
+      name: /Log in/i
+    });
+    await expect(loginButton).toBeInTheDocument();
+    await userEvent.click(loginButton);
+    await expect(loginButton).not.toBeInTheDocument();
+    const logoutButton = canvas.getByRole('button', {
+      name: /Log out/i
+    });
+    await expect(logoutButton).toBeInTheDocument();
+  }
+}`,...o.parameters?.docs?.source}}};const H=["Default"];export{o as Default,H as __namedExportsOrder,j as default};
