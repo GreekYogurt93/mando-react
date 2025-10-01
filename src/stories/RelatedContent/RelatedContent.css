@@ -1,0 +1,146 @@
+
+
+.related-content
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46 66 77);
+    padding: 30px;
+}
+
+.related-content__cards
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.related-content__header
+{
+    color: white;
+    font-family: "droid";
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.related-content__title
+{
+    font-weight: 100;
+}
+
+.related-content__button
+{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "open-sans";
+    font-weight: 600;
+    color: rgb(97 116 126);
+}
+
+.related-content__divider
+{
+    width: 100%;
+    color: rgb(97 116 126);
+}
+
+@media (max-width:320px) {
+    .related-content__header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related-content__title
+    {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .related-content__cards
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width:321px) and (max-width:600px)
+{
+
+    .related-content__header
+    {
+        align-items: center;
+        width: 100%;
+    }
+
+    .related-content__title
+    {
+        width: 60%;
+        font-size: 18px;
+    }
+
+   
+
+    .related-content__button{
+      width: 30%;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .related-content__cards
+    {
+        flex-direction: column;
+        gap:20px
+    }
+}
+
+@media (min-width:601px) and (max-width:1024px)
+{
+    .related-content__title
+    {
+        font-size: 28px;
+        width: 70%;
+        margin: 0px;
+    }
+
+    .related-content
+    {
+        gap: 0px;
+    }
+
+    .related-content__button
+    {
+        width: 15%;
+        text-align: center;
+    }
+}
+@media (min-width:1025px) and (max-width:1336px)
+{
+    .related-content__header
+    {
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .related-content__button
+    {
+        font-size: 18px;
+    }
+
+    .related-content
+    {
+        padding: 20px 50px;
+    }
+}
+
+@media (min-width:1337px)
+{
+    .related-content{
+        padding: 30px 60px;
+    }
+}
+
+
+
